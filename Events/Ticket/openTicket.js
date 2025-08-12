@@ -10,10 +10,10 @@ client.on('interactionCreate', async (interaction) => {
         const horaV = new Date().getHours();
         const horaAtual = new Date().toLocaleTimeString();
 
-        if (horaV < 8 || horaV >= 18) {
+        if (horaV < 7 || horaV >= 21) {
             await interaction.reply({
                 embeds: [new EmbedBuilder()
-                    .setDescription("**Horário de atendimento ➠** `08:00 ás 18:00 horas`")
+                    .setDescription("**Horário de atendimento ➠** `07:00 ás 21:00 horas`")
                     .setColor(0xFF0000)
                 ],
                 ephemeral: true
@@ -147,3 +147,4 @@ client.on('interactionCreate', async (interaction) => {
         openTicket(1);
     }
 });
+
