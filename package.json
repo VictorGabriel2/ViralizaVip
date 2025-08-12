@@ -1,4 +1,10 @@
 {
+  "name": "ViralizaVip",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "colors": "^1.4.0",
     "discord-html-transcripts": "^3.2.0",
